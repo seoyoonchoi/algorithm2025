@@ -35,9 +35,14 @@ public class Class03 {
             int compared = s1x[1].compareTo(s2x[1]);
 
             if(compared == 0){
-                return s1x
+                return s1x[0].compareTo(s2x[0]);
+            }else{
+                return compared;
             }
-        })
+        });
+
+        letterList.addAll(digitList);
+        return letterList.toArray(new String[0]);
 
     }
 }
